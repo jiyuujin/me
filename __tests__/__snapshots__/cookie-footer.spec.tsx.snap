@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Cookie Footer Wrapper render correctly 1`] = `
-<cookie-footer
-  name="yuukit-me-profile-site"
-  title="あなたがこのサイト上でベストな体験ができるようCookieを使用しています"
-  url="https://nekohack-privacy-policy.netlify.app"
-/>
-`;

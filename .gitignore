@@ -68,3 +68,5 @@ README.html
 .idea
 
 .lighthouseci
+
+__tests__/__snapshots__
