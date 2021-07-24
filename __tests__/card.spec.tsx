@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Introduction from '../src/components/Introduction'
+import Card from '../src/components/Card'
 import { siteMetadata } from '../src/utils/constants'
 
 jest.mock('react-intl', () => {
@@ -14,11 +14,9 @@ jest.mock('react-intl', () => {
     }
 })
 
-describe('Introduction', () => {
+describe('Card', () => {
     it('render correctly', () => {
-        const tree = renderer
-            .create(<Introduction data={siteMetadata} />)
-            .toJSON()
+        const tree = renderer.create(<Card data={siteMetadata} />).toJSON()
         expect(tree).toMatchSnapshot()
     })
 })

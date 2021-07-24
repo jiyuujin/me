@@ -2,7 +2,17 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { IntlContextProvider } from 'gatsby-plugin-intl'
 import messages from '../src/intl/en.json'
-import HeaderBar from '../src/components/I18nOperation'
+import Community from '../src/components/Community'
+
+const communityData = [
+    {
+        node: {
+            id: 'id',
+            text: 'text',
+            url: 'url',
+        },
+    },
+]
 
 const locales = ['en', 'ja']
 
@@ -17,7 +27,7 @@ jest.mock('react-intl', () => {
     }
 })
 
-describe('HeaderBar', () => {
+describe('Product', () => {
     it('render correctly', () => {
         const tree = renderer
             .create(
@@ -31,7 +41,7 @@ describe('HeaderBar', () => {
                         routed: true,
                     }}
                 >
-                    <HeaderBar />
+                    <Community data={communityData} />
                 </IntlContextProvider>
             )
             .toJSON()

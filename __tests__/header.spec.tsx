@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import Header from '../src/components/Header'
-import { siteMetadata } from './constants'
+import { siteMetadata } from '../src/utils/constants'
 
 jest.mock('react-intl', () => {
     const reactIntl = jest.requireActual('react-intl')
