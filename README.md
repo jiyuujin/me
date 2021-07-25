@@ -8,7 +8,7 @@
 
 ## `HTTPS` on localhost
 
-The local development environment has been converted to `https`, please refer to [オレオレ自己署名 SSL 証明書を作る](https://webneko.dev/posts/create-the-self-signed-ssl-certificate)
+The local development has been converted to `https`, please refer to [オレオレ自己署名 SSL 証明書を作る](https://webneko.dev/posts/create-the-self-signed-ssl-certificate)
 
 ```bash
 yarn dev --ssl-key ~/example.com+5-key.pem --ssl-cert ~/example.com+5.pem
