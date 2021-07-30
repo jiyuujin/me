@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react'
-import { useIntl } from 'gatsby-plugin-intl'
+import { useIntl } from 'gatsby-plugin-react-intl'
 import * as SC from './wrapper.module.scss'
 import { NekoButton } from 'nekohack-ui'
 import Modal from '../Modal'
