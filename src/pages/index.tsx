@@ -8,14 +8,14 @@ import { CookieFooterWrapper } from '../components/Footer/cookie'
 // import { Helmet } from 'react-helmet'
 
 const IndexPage = ({ data }: any) => {
-    return (
-        <Layout>
-            <SEO />
-            <Home data={data} />
-            <Footer />
-            <CookieFooterWrapper />
-        </Layout>
-    )
+  return (
+    <Layout>
+      <SEO />
+      <Home data={data} />
+      <Footer />
+      <CookieFooterWrapper />
+    </Layout>
+  )
 }
 
 export const query = graphql`

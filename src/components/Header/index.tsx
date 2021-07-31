@@ -8,17 +8,17 @@ type HeaderProps = {
 }
 
 const Header: FC<HeaderProps> = ({ data }) => {
-    return (
-        <div className={SC.title}>
-            <TextLoop interval={5000}>
-                {positions.map((position: string) => (
-                    <div key={position}>{position}</div>
-                ))}
-            </TextLoop>
-            <div className={SC.name}>{data?.author}</div>
-            <div className={SC.locale}>{data?.locale}</div>
-        </div>
-    )
+  return (
+    <div className={SC.title}>
+      <TextLoop interval={5000}>
+        {positions.map((position: string) => (
+          <div key={position}>{position}</div>
+        ))}
+      </TextLoop>
+      <div className={SC.name}>{data?.author}</div>
+      <div className={SC.locale}>{data?.locale}</div>
+    </div>
+  )
 }
 
 export default Header

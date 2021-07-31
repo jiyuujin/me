@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 const LazyImage = ({ assetUrl, alt }: { assetUrl: string; alt: string }) => {
-    const { allImageSharp } = useStaticQuery(graphql`
+  const { allImageSharp } = useStaticQuery(graphql`
         query {
             allImageSharp {
                 nodes {
@@ -16,17 +16,17 @@ const LazyImage = ({ assetUrl, alt }: { assetUrl: string; alt: string }) => {
         }
     `)
 
-    return (
-        <Img
-            fixed={
-                allImageSharp.nodes.find(
-                    (n: { fixed: { originalName: string } }) =>
-                        n.fixed.originalName === assetUrl
-                ).fixed
-            }
-            alt={alt}
-        />
-    )
+  return (
+    <Img
+      fixed={
+        allImageSharp.nodes.find(
+          (n: { fixed: { originalName: string } }) =>
+            n.fixed.originalName === assetUrl
+        ).fixed
+      }
+      alt={alt}
+    />
+  )
 }
 
 export default LazyImage
