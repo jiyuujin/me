@@ -4,21 +4,21 @@ import * as SC from './index.module.scss'
 import { positions } from '../../utils/profile'
 
 type HeaderProps = {
-    data: any
+  data: any
 }
 
 const Header: FC<HeaderProps> = ({ data }) => {
-    return (
-        <div className={SC.title}>
-            <TextLoop interval={5000}>
-                {positions.map((position: string) => (
-                    <div key={position}>{position}</div>
-                ))}
-            </TextLoop>
-            <div className={SC.name}>{data?.author}</div>
-            <div className={SC.locale}>{data?.locale}</div>
-        </div>
-    )
+  return (
+    <div className={SC.title}>
+      <TextLoop interval={5000}>
+        {positions.map((position: string) => (
+          <div key={position}>{position}</div>
+        ))}
+      </TextLoop>
+      <div className={SC.name}>{data?.author}</div>
+      <div className={SC.locale}>{data?.locale}</div>
+    </div>
+  )
 }
 
 export default Header

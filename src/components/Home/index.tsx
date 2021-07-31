@@ -10,19 +10,19 @@ import Community from '../Community'
 import Slide from '../Slide'
 
 const Home: FC<any> = ({ data }) => {
-    return (
-        <main>
-            <I18nOperation />
-            <Header data={data.site?.siteMetadata} />
-            <Payment />
-            <CardWrapper data={data.site?.siteMetadata} />
-            <Introduction data={data.site?.siteMetadata} />
-            <Work data={data.allLinksYaml?.edges} />
-            <Product data={data.allProductsYaml?.edges} />
-            <Community data={data.allCommunitiesYaml?.edges} />
-            <Slide data={data.allTalksYaml?.edges} />
-        </main>
-    )
+  return (
+    <main>
+      <I18nOperation />
+      <Header data={data.site?.siteMetadata} />
+      <Payment />
+      <CardWrapper data={data.site?.siteMetadata} />
+      <Introduction data={data.site?.siteMetadata} />
+      <Work data={data.allLinksYaml?.edges} />
+      <Product data={data.allProductsYaml?.edges} />
+      <Community data={data.allCommunitiesYaml?.edges} />
+      <Slide data={data.allTalksYaml?.edges} />
+    </main>
+  )
 }
 
 export default Home
