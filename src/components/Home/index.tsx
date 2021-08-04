@@ -2,7 +2,6 @@ import React, { FC } from 'react'
 import I18nOperation from '../I18nOperation'
 import Header from '../Header'
 import { Payment } from '../Payment'
-import { CardWrapper } from '../Card/wrapper'
 import Introduction from '../Introduction'
 import Work from '../Work'
 import Product from '../Product'
@@ -14,8 +13,7 @@ const Home: FC<any> = ({ data }) => {
     <main>
       <I18nOperation />
       <Header data={data.site?.siteMetadata} />
-      <Payment />
-      <CardWrapper data={data.site?.siteMetadata} />
+      <Payment siteMetadata={data.site?.siteMetadata} />
       <Introduction data={data.site?.siteMetadata} />
       <Work data={data.allLinksYaml?.edges} />
       <Product data={data.allProductsYaml?.edges} />
