@@ -6,7 +6,7 @@ import { SiteMetadataTypes } from '../../types'
 import { NekoButton } from 'nekohack-ui'
 import PaperPlaneSvg from '../../static/icons/paper-plane.svg'
 
-const Card: FC<any> = ({ data }: SiteMetadataTypes) => {
+export const Card: FC<any> = ({ data }: SiteMetadataTypes) => {
   const intl = useIntl()
 
   return (
@@ -43,5 +43,3 @@ const Card: FC<any> = ({ data }: SiteMetadataTypes) => {
     </div>
   )
 }
-
-export default Card

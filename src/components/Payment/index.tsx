@@ -15,13 +15,18 @@ import { loadStripe } from '@stripe/stripe-js'
 import ContributeSvg from '../../static/icons/contribute.svg'
 
 import Modal from '../Modal'
-import { Timeline } from './Timeline'
+import { Card } from '../Card'
+
+type PaymentType = {
+  siteMetadata: any
+}
 
 type CheckoutFormType = {
   isTest: boolean
+  siteMetadata: any
 }
 
-export const Payment = () => {
+export const Payment = ({ siteMetadata }: PaymentType) => {
   const isTest = false
 
   const stripeApiKey = isTest
@@ -32,13 +37,13 @@ export const Payment = () => {
   return (
     <div style={{ padding: '4px 0' }}>
       <Elements stripe={stripePromise}>
-        <CheckoutForm isTest={isTest} />
+        <CheckoutForm isTest={isTest} siteMetadata={siteMetadata} />
       </Elements>
     </div>
   )
 }
 
-export const CheckoutForm = ({ isTest }: CheckoutFormType) => {
+export const CheckoutForm = ({ isTest, siteMetadata }: CheckoutFormType) => {
   const intl = useIntl()
 
   const stripe = useStripe()
@@ -61,8 +66,8 @@ export const CheckoutForm = ({ isTest }: CheckoutFormType) => {
         'Content-Type': 'application/json',
       },
     })
-    const data = await res.json()
-    const jsonData = JSON.parse(data.body)
+    const resData = await res.json()
+    const jsonData = JSON.parse(resData.body)
     const secret = jsonData.charge.client_secret
 
     const card = elements?.getElement(CardElement)
@@ -105,7 +110,7 @@ export const CheckoutForm = ({ isTest }: CheckoutFormType) => {
               <div className={SC.content}>
                 <form className={SC.checkoutForm} onSubmit={handleSubmit}>
                   <div className={SC.order}>
-                    <Timeline />
+                    <Card data={siteMetadata} />
                   </div>
                   <label
                     style={{
