@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { IntlContextProvider } from 'gatsby-plugin-react-intl'
+import { IntlContextProvider } from 'gatsby-plugin-intl'
 import messages from '../src/intl/en.json'
 import Work from '../src/components/Work'
 

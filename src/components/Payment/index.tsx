@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { graphql, StaticQuery } from 'gatsby'
-import { useIntl } from 'gatsby-plugin-react-intl'
+import { useIntl } from 'gatsby-plugin-intl'
 import { NekoButton } from 'nekohack-ui'
 import * as SC from './index.module.scss'
 
