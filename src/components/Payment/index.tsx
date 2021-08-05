@@ -86,73 +86,56 @@ export const CheckoutForm = ({ isTest }: CheckoutFormType) => {
   }
 
   return (
-    <StaticQuery
-      query={query}
-      render={(data) => (
-        <div className={`wrapper ${SC.wrapper_payment}`}>
-          <NekoButton onClick={handleOpen}>
-            <ContributeSvg
-              style={{
-                width: '20px',
-                height: '20px',
-                marginRight: '4px',
-              }}
-            />
-            {intl.formatMessage({ id: 'labels.contribute' })}
-          </NekoButton>
-          {open && (
-            <Modal onClose={handleOpen}>
-              <div className={SC.content}>
-                <form className={SC.checkoutForm} onSubmit={handleSubmit}>
-                  <div className={SC.order}>
-                    <Timeline />
-                  </div>
-                  <label
-                    style={{
-                      width: '100%',
-                      padding: '12px 0',
-                    }}
-                  >
-                    <CardElement
-                      options={{
-                        hidePostalCode: true,
-                      }}
-                    />
-                  </label>
-                  <button className={SC.checkoutButton} disabled={!stripe}>
-                    {intl.formatMessage({
-                      id: 'labels.payment',
-                    })}
-                  </button>
-                  <div className={SC.manual}>
-                    <a
-                      href="https://github.com/nekohack/Code-of-Conduct"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {intl.formatMessage({
-                        id: 'confirm_policy',
-                      })}
-                    </a>
-                  </div>
-                </form>
+    <div className={`wrapper ${SC.wrapper_payment}`}>
+      <NekoButton onClick={handleOpen}>
+        <ContributeSvg
+          style={{
+            width: '20px',
+            height: '20px',
+            marginRight: '4px',
+          }}
+        />
+        {intl.formatMessage({ id: 'labels.contribute' })}
+      </NekoButton>
+      {open && (
+        <Modal onClose={handleOpen}>
+          <div className={SC.content}>
+            <form className={SC.checkoutForm} onSubmit={handleSubmit}>
+              <div className={SC.order}>
+                <Timeline />
               </div>
-            </Modal>
-          )}
-        </div>
+              <label
+                style={{
+                  width: '100%',
+                  padding: '12px 0',
+                }}
+              >
+                <CardElement
+                  options={{
+                    hidePostalCode: true,
+                  }}
+                />
+              </label>
+              <button className={SC.checkoutButton} disabled={!stripe}>
+                {intl.formatMessage({
+                  id: 'labels.payment',
+                })}
+              </button>
+              <div className={SC.manual}>
+                <a
+                  href="https://github.com/nekohack/Code-of-Conduct"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {intl.formatMessage({
+                    id: 'confirm_policy',
+                  })}
+                </a>
+              </div>
+            </form>
+          </div>
+        </Modal>
       )}
-    />
+    </div>
   )
 }
-
-export const query = graphql`
-  query {
-    contribute: file(relativePath: { eq: "contribute.png" }) {
-      childImageSharp {
-        fixed(width: 500) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`

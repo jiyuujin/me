@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
 import { useIntl } from 'gatsby-plugin-react-intl'
 import * as SC from './index.module.scss'
-import LazyImage from '../LazyImage'
 import { SiteMetadataTypes } from '../../types'
 import { NekoButton } from 'nekohack-ui'
 import PaperPlaneSvg from '../../static/icons/paper-plane.svg'
@@ -12,9 +11,6 @@ const Card: FC<any> = ({ data }: SiteMetadataTypes) => {
   return (
     <div className={SC.content}>
       <div className={SC.cardInfo}>
-        <div className={SC.me}>
-          <LazyImage assetUrl={'me.png'} alt={'me'} />
-        </div>
         <h1 className={SC.name}>{data.author}</h1>
         <ul className={SC.position}>
           {data.position.split(',').map((p: string) => (
