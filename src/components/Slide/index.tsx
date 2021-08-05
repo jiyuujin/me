@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { useIntl } from 'gatsby-plugin-react-intl'
+import { useIntl } from 'gatsby-plugin-intl'
 import dayjs from 'dayjs'
 import * as SC from './index.module.scss'
 
