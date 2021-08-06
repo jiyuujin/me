@@ -86,7 +86,6 @@ module.exports = {
         trackingId: `UA-167986295-1`,
       },
     },
-    // `gatsby-plugin-typegen`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
