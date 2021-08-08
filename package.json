@@ -43,7 +43,7 @@
     "@babel/preset-typescript": "7.14.5",
     "@nekohack/eslint-config-react": "0.5.0",
     "@types/jest": "26.0.24",
-    "@types/react": "16.14.11",
+    "@types/react": "16.14.12",
     "@types/react-dom": "16.9.14",
     "@types/react-helmet": "6.1.2",
     "@types/react-test-renderer": "16.9.5",
