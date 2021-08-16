@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@nekohack/footer-ui": "1.0.0",
-    "@nekohack/normalize.css": "2.3.1",
+    "@nekohack/normalize.css": "2.3.3",
     "@stripe/react-stripe-js": "1.4.1",
     "@stripe/stripe-js": "1.17.0",
     "dayjs": "1.10.6",
