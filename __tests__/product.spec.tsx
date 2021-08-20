@@ -44,7 +44,7 @@ describe('Product', () => {
           }}
         >
           <Product data={imageData} />
-        </IntlContextProvider>
+        </IntlContextProvider>,
       )
       .toJSON()
     expect(tree).toMatchSnapshot()

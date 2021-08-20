@@ -47,7 +47,6 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 sync ./public/ s3://yuma-kitamura.nekohack.me/ --delete --acl public-read
-
 #      - name: Clear cache in CloudFront
 #        uses: chetan/invalidate-cloudfront-action@v1.2
 #        env:

@@ -42,7 +42,7 @@ describe('Product', () => {
           }}
         >
           <Work data={workData} />
-        </IntlContextProvider>
+        </IntlContextProvider>,
       )
       .toJSON()
     expect(tree).toMatchSnapshot()

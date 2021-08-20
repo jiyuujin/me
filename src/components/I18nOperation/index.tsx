@@ -13,13 +13,7 @@ const I18nOperation: FC = () => {
   return (
     <div className={SC.headerBar}>
       <IntlContextConsumer>
-        {({
-          languages,
-          language: currentLocale,
-        }: {
-          languages: string[]
-          language: string
-        }) =>
+        {({ languages, language: currentLocale }: { languages: string[]; language: string }) =>
           languages.map((language) => (
             <a
               key={language}

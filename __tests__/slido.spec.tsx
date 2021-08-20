@@ -44,7 +44,7 @@ describe('Product', () => {
           }}
         >
           <Slide data={communityData} />
-        </IntlContextProvider>
+        </IntlContextProvider>,
       )
       .toJSON()
     expect(tree).toMatchSnapshot()

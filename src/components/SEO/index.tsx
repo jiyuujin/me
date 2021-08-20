@@ -7,22 +7,11 @@ const SEO = () => (
     query={query}
     render={({
       site: {
-        siteMetadata: {
-          title,
-          titleTemplate,
-          description,
-          url,
-          ogImage,
-          twitterUsername,
-        },
+        siteMetadata: { title, titleTemplate, description, url, ogImage, twitterUsername },
       },
     }) => {
       return (
-        <Helmet
-          title={title}
-          titleTemplate={titleTemplate}
-          htmlAttributes={{ lang: 'ja' }}
-        >
+        <Helmet title={title} titleTemplate={titleTemplate} htmlAttributes={{ lang: 'ja' }}>
           <meta name="description" content={description} />
           <meta property="og:site_name" content={title} />
           <meta property="og:type" content="website" />

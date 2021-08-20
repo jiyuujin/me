@@ -75,7 +75,7 @@ module.exports = {
         policy: [
           {
             userAgent: `*`,
-            allow: `/`
+            allow: `/`,
           },
         ],
       },
@@ -134,7 +134,7 @@ module.exports = {
             src: `icons/bakeneko2-512.png`,
             sizes: `512x512`,
             type: `image/png`,
-          }
+          },
         ],
         theme_color: `#ffbb33`,
         background_color: `#ffbb33`,

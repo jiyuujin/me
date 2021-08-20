@@ -16,9 +16,7 @@ const Footer: FC = () => {
           {intl.formatMessage({ id: 'contact' })}
         </a>
       </p>
-      <p className={SC.copyright}>
-        Created © 2020 jiyuujin LAB. All Rights Reserved.
-      </p>
+      <p className={SC.copyright}>Created © 2020 jiyuujin LAB. All Rights Reserved.</p>
     </footer>
   )
 }

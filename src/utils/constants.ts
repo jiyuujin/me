@@ -2,7 +2,7 @@ export const siteMetadata = {
   title: 'Web Developer',
   titleTemplate: '%s | Portfolio%s | ポートフォリオ',
   // eslint-disable-next-line
-    description: `こちらは Web Developer \'Yuma Kitamura\' ポートフォリオです。`,
+  description: `こちらは Web Developer \'Yuma Kitamura\' ポートフォリオです。`,
   biography:
     'ネット上では 自由人、jiyuujin と名乗って生息しています。誕生日は1988年11月04日。大阪府豊中市生まれ。性別は男性。現在は関西圏（京都や大阪）を中心に活動しています。',
   position: 'Front-End Engineer,Web Developer,HR Adviser',

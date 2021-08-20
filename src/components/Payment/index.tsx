@@ -3,12 +3,7 @@ import { useIntl } from 'gatsby-plugin-intl'
 import { NekoButton } from 'nekohack-ui'
 import * as SC from './index.module.scss'
 
-import {
-  Elements,
-  CardElement,
-  useStripe,
-  useElements,
-} from '@stripe/react-stripe-js'
+import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
 import { loadStripe } from '@stripe/stripe-js'
 
 import ContributeSvg from '../../static/icons/contribute.svg'

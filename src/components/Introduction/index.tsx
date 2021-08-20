@@ -14,15 +14,9 @@ const Introduction: FC<IntroductionProps> = ({ data }) => {
   return (
     <div className="wrapper">
       <div className="section">
-        <div className={SC.subtitle}>
-          {intl.formatMessage({ id: 'labels.basic_info' })}
-        </div>
-        <div className={SC.description}>
-          {intl.formatMessage({ id: 'basic_biography' })}
-        </div>
-        <div className={SC.subtitle}>
-          {intl.formatMessage({ id: 'labels.position' })}
-        </div>
+        <div className={SC.subtitle}>{intl.formatMessage({ id: 'labels.basic_info' })}</div>
+        <div className={SC.description}>{intl.formatMessage({ id: 'basic_biography' })}</div>
+        <div className={SC.subtitle}>{intl.formatMessage({ id: 'labels.position' })}</div>
         <div className={SC.description}>
           <ul>
             {positionList?.map((p: string) => {

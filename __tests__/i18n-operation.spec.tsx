@@ -32,7 +32,7 @@ describe('HeaderBar', () => {
           }}
         >
           <I18nOperation />
-        </IntlContextProvider>
+        </IntlContextProvider>,
       )
       .toJSON()
     expect(tree).toMatchSnapshot()

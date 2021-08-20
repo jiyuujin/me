@@ -42,7 +42,7 @@ describe('Product', () => {
           }}
         >
           <Community data={communityData} />
-        </IntlContextProvider>
+        </IntlContextProvider>,
       )
       .toJSON()
     expect(tree).toMatchSnapshot()
