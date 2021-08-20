@@ -20,18 +20,12 @@ const Product: FC<ProductProps> = ({ data }) => {
   return (
     <div className="wrapper">
       <div className="section">
-        <div className={SC.subtitle}>
-          {intl.formatMessage({ id: 'product' })}
-        </div>
+        <div className={SC.subtitle}>{intl.formatMessage({ id: 'product' })}</div>
         {data.map(({ node }: any) => {
           return (
             <div key={node.id}>
-              <div className={SC.subtitle}>
-                {intl.formatMessage({ id: node.title })}
-              </div>
-              {node.image && (
-                <img src={node.image} alt={node.title} decoding="async" />
-              )}
+              <div className={SC.subtitle}>{intl.formatMessage({ id: node.title })}</div>
+              {node.image && <img src={node.image} alt={node.title} decoding="async" />}
               <div
                 className={SC.description}
                 dangerouslySetInnerHTML={{

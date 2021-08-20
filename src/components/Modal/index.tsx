@@ -21,7 +21,7 @@ const Modal: FC<ModalProps> = ({ children, onClose }: ModalProps) => {
         onClose?.()
       }
     },
-    [ref.current]
+    [ref.current],
   )
 
   useEffect(() => {

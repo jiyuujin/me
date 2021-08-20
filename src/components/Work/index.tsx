@@ -13,12 +13,8 @@ const Work: FC<WorkProps> = ({ data }) => {
     <div className="wrapper">
       <div className="section">
         <div className={SC.subtitle}>{intl.formatMessage({ id: 'work' })}</div>
-        <div className={SC.description}>
-          {intl.formatMessage({ id: 'work_experience' })}
-        </div>
-        <div className={SC.subtitle}>
-          {intl.formatMessage({ id: 'labels.related_links' })}
-        </div>
+        <div className={SC.description}>{intl.formatMessage({ id: 'work_experience' })}</div>
+        <div className={SC.subtitle}>{intl.formatMessage({ id: 'labels.related_links' })}</div>
         <div className={SC.description}>
           <ul>
             {data.map(({ node }: any) => {

@@ -36,10 +36,7 @@ declare namespace NodeJS {
 declare namespace JSX {
   interface ElementChildrenAttribute {
     children: any
-    'cookie-footer': React.DetailedHTMLProps<
-      React.HTMLAttributes<HTMLElement>,
-      HTMLElement
-    >
+    'cookie-footer': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>
   }
 
   interface IntrinsicElements {

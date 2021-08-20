@@ -1,8 +1,5 @@
 import React, { FC } from 'react'
-import {
-  applyPolyfills,
-  defineCustomElements,
-} from '@nekohack/footer-ui/loader'
+import { applyPolyfills, defineCustomElements } from '@nekohack/footer-ui/loader'
 
 export const CookieFooterWrapper: FC = () => {
   applyPolyfills().then(() => {

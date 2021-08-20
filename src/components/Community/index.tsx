@@ -12,9 +12,7 @@ const Community: FC<CommunityProps> = ({ data }) => {
   return (
     <div className="wrapper">
       <div className={`section ${SC.section_community}`}>
-        <div className={SC.subtitle}>
-          {intl.formatMessage({ id: 'community' })}
-        </div>
+        <div className={SC.subtitle}>{intl.formatMessage({ id: 'community' })}</div>
         <div className={SC.description}>
           <ul>
             {data.map(({ node }: any) => {
