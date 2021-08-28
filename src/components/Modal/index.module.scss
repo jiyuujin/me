@@ -20,8 +20,12 @@
   display: flex;
 }
 
-@media (min-width: 481px) {
+@media (max-width: 600px) {
+  .modal-mask {
+    width: 100%;
+  }
+
   .modal-container {
-    //min-width: 546px;
+    width: 100%;
   }
 }
