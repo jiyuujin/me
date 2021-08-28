@@ -100,7 +100,7 @@ export const CheckoutForm = ({ isTest, siteMetadata }: CheckoutFormType) => {
         <Modal onClose={handleOpen}>
           <div className={SC.content}>
             <form className={SC.checkoutForm} onSubmit={handleSubmit}>
-              <div className={SC.order}>
+              <div className={SC.checkoutForm_info}>
                 <Card data={siteMetadata} />
               </div>
               <label
@@ -115,7 +115,7 @@ export const CheckoutForm = ({ isTest, siteMetadata }: CheckoutFormType) => {
                   }}
                 />
               </label>
-              <button className={SC.checkoutButton} disabled={!stripe}>
+              <button className={SC.checkoutForm_button} disabled={!stripe}>
                 {intl.formatMessage({
                   id: 'labels.payment',
                 })}
