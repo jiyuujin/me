@@ -1,5 +1,4 @@
 .content {
-  min-width: 20rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -60,7 +59,7 @@
   }
 }
 
-@media (min-width: 481px) {
+@media (max-width: 600px) {
   .card-info {
     width: 96%;
     margin-left: auto;
