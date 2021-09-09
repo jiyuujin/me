@@ -44,5 +44,8 @@
     "looking_back_in_2019": "Looking back in 2019",
     "vue_cli_test_tips": "Vue CLI test tips"
   },
-  "contact": "Contact"
+  "contact": "Contact",
+  "covid19": {
+    "fully_vaccinated": "Fully Vaccinated"
+  }
 }

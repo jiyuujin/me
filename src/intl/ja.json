@@ -43,5 +43,8 @@
     "looking_back_in_2019": "2019 年を振り返る",
     "vue_cli_test_tips": "Vue CLI テスト tips 集"
   },
-  "contact": "問い合わせ"
+  "contact": "問い合わせ",
+  "covid19": {
+    "fully_vaccinated": "ワクチン接種済"
+  }
 }
