@@ -17,6 +17,9 @@
   background-color: #fff;
   color: #000;
   height: auto;
+  padding: 20px;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   display: flex;
 }
 
@@ -27,5 +30,6 @@
 
   .modal-container {
     width: 100%;
+    padding: 0;
   }
 }
