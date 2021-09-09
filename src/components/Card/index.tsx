@@ -12,6 +12,7 @@ export const Card: FC<any> = ({ data }: SiteMetadataTypes) => {
     <div className={SC.content}>
       <div className={SC.cardInfo}>
         <h1 className={SC.name}>{data.author}</h1>
+        <span className={SC.tag}>{intl.formatMessage({ id: 'covid19.fully_vaccinated' })}</span>
         <ul className={SC.position}>
           {data.position.split(',').map((p: string) => (
             <li key={p}>{p}</li>
