@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
 import { useIntl } from 'gatsby-plugin-intl'
 import dayjs from 'dayjs'
-import * as SC from './index.module.scss'
 
 type SlideProps = {
   data: Array<unknown>
@@ -15,48 +14,44 @@ const Slide: FC<SlideProps> = ({ data }) => {
   }
 
   return (
-    <div className="wrapper">
-      <div className="section">
-        <div className={SC.subtitle}>{intl.formatMessage({ id: 'slide' })}</div>
-        <div className={SC.description}>
-          <ul>
-            {data.map(({ node }: any) => {
-              return (
-                <li key={node.id}>
-                  <div>{dateFormat(node.date)}</div>
+    <div className="section">
+      <h1>{intl.formatMessage({ id: 'slide' })}</h1>
+      <ul>
+        {data.map(({ node }: any) => {
+          return (
+            <li key={node.id}>
+              <div>{dateFormat(node.date)}</div>
+              <a
+                href={node.url}
+                role="button"
+                aria-pressed="true"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {intl.formatMessage({
+                  id: node.text,
+                })}
+              </a>
+              {node.youtubeUrl && (
+                <>
+                  {' / '}
                   <a
-                    href={node.url}
+                    href={node.youtubeUrl}
                     role="button"
                     aria-pressed="true"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     {intl.formatMessage({
-                      id: node.text,
+                      id: 'labels.youtube_live',
                     })}
                   </a>
-                  {node.youtubeUrl && (
-                    <>
-                      {' / '}
-                      <a
-                        href={node.youtubeUrl}
-                        role="button"
-                        aria-pressed="true"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {intl.formatMessage({
-                          id: 'labels.youtube_live',
-                        })}
-                      </a>
-                    </>
-                  )}
-                </li>
-              )
-            })}
-          </ul>
-        </div>
-      </div>
+                </>
+              )}
+            </li>
+          )
+        })}
+      </ul>
     </div>
   )
 }

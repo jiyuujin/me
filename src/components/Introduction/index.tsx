@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import { useIntl } from 'gatsby-plugin-intl'
-import * as SC from './index.module.scss'
 
 type IntroductionProps = {
   data: any
@@ -12,19 +11,15 @@ const Introduction: FC<IntroductionProps> = ({ data }) => {
   const positionList: string[] | undefined = data?.position?.split(',')
 
   return (
-    <div className="wrapper">
-      <div className="section">
-        <div className={SC.subtitle}>{intl.formatMessage({ id: 'labels.basic_info' })}</div>
-        <div className={SC.description}>{intl.formatMessage({ id: 'basic_biography' })}</div>
-        <div className={SC.subtitle}>{intl.formatMessage({ id: 'labels.position' })}</div>
-        <div className={SC.description}>
-          <ul>
-            {positionList?.map((p: string) => {
-              return <li key={p}>{p}</li>
-            })}
-          </ul>
-        </div>
-      </div>
+    <div className="section">
+      <h1>{intl.formatMessage({ id: 'labels.basic_info' })}</h1>
+      <p>{intl.formatMessage({ id: 'basic_biography' })}</p>
+      <h2>{intl.formatMessage({ id: 'labels.position' })}</h2>
+      <ul>
+        {positionList?.map((p: string) => {
+          return <li key={p}>{p}</li>
+        })}
+      </ul>
     </div>
   )
 }
