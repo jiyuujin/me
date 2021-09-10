@@ -9,6 +9,7 @@ type ProductProps = {
       description: string
       skills: string[]
       image: string
+      url: string
     }
   }>
 }
@@ -41,6 +42,20 @@ const Product: FC<ProductProps> = ({ data }) => {
                 return <li key={skill}>{skill}</li>
               })}
             </ul>
+            {node.url && (
+              <>
+                <h3>
+                  {intl.formatMessage({
+                    id: 'product_url',
+                  })}
+                </h3>
+                <p>
+                  <a href={node.url} target="_blank" rel="noopener noreferrer">
+                    {node.url}
+                  </a>
+                </p>
+              </>
+            )}
           </div>
         )
       })}

@@ -11,6 +11,7 @@
     - Circle CI
     - Github Actions
   image: https://i.imgur.com/sN5nHoS.jpg
+  url: https://yuma-kitamura.nekohack.me/
 - title: products.tech_blog
   description: products.tech_blog_description
   skills:
@@ -24,3 +25,4 @@
     - Circle CI
     - Github Actions
   image: https://i.imgur.com/xuj6KVU.jpg
+  url: https://webneko.dev/

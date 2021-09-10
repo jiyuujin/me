@@ -45,6 +45,7 @@ export const query = graphql`
           description
           skills
           image
+          url
         }
       }
     }
