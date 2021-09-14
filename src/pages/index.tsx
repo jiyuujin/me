@@ -2,6 +2,7 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
+import Nav from '../components/Nav'
 import Home from '../components/Home'
 import Footer from '../components/Footer'
 import { CookieFooterWrapper } from '../components/Footer/cookie'
@@ -11,6 +12,7 @@ const IndexPage = ({ data }: any) => {
   return (
     <Layout>
       <SEO />
+      <Nav />
       <Home data={data} />
       <Footer />
       <CookieFooterWrapper />

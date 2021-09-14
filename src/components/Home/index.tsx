@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import I18nOperation from '../I18nOperation'
 import Header from '../Header'
 import { Payment } from '../Payment'
 import Introduction from '../Introduction'
@@ -11,7 +10,6 @@ import Slide from '../Slide'
 const Home: FC<any> = ({ data }) => {
   return (
     <main>
-      <I18nOperation />
       <Header data={data.site?.siteMetadata} />
       <Payment siteMetadata={data.site?.siteMetadata} />
       <Introduction data={data.site?.siteMetadata} />
