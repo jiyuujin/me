@@ -53,11 +53,7 @@ const Nav: FC = () => {
                     role="button"
                     aria-pressed="true"
                     onClick={() => changeLocale(language)}
-                    style={{
-                      margin: 10,
-                      textDecoration: 'underline',
-                      cursor: 'pointer',
-                    }}
+                    className={SC.navLink}
                   >
                     {languageName[language]}
                   </a>
