@@ -1,5 +1,5 @@
 <p align="center">
-  <img src='https://github.com/jiyuujin/yuma-kitamura.nekohack.me/blob/master/bakeneko.svg?sanitize=true' alt="Me" title="Me" width="256px" height='256px'/>
+  <img src='https://github.com/jiyuujin/me/blob/master/bakeneko.svg?sanitize=true' alt="Me" title="Me" width="256px" height='256px'/>
 </p>
 
 <div align="center">
