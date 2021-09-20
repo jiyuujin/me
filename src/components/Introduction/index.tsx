@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { useIntl } from 'gatsby-plugin-intl'
+import { useIntl } from 'gatsby-plugin-react-intl'
 
 type IntroductionProps = {
   data: any

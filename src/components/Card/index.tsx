@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { useIntl } from 'gatsby-plugin-intl'
+import { useIntl } from 'gatsby-plugin-react-intl'
 import * as SC from './index.module.scss'
 import { SiteMetadataTypes } from '../../types'
 import { NekoButton } from 'nekohack-ui'

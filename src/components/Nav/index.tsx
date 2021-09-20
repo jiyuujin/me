@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { IntlContextConsumer, changeLocale } from 'gatsby-plugin-intl'
+import { IntlContextConsumer, changeLocale } from 'gatsby-plugin-react-intl'
 import * as SC from './index.module.scss'
 
 const languageName: {
