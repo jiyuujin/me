@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { IntlContextProvider } from 'gatsby-plugin-react-intl'
 import messages from '../src/intl/en.json'
-import I18nOperation from '../src/components/I18nOperation'
+import Nav from '../src/components/Nav'
 
 const locales = ['en', 'ja']
 
@@ -31,7 +31,7 @@ describe('HeaderBar', () => {
             routed: true,
           }}
         >
-          <I18nOperation />
+          <Nav />
         </IntlContextProvider>,
       )
       .toJSON()

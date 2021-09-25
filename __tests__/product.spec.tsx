@@ -12,6 +12,7 @@ const imageData = [
       description: 'title',
       skills: ['title'],
       image: 'title',
+      url: 'title',
     },
   },
 ]
