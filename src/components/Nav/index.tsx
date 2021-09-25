@@ -10,7 +10,7 @@ const languageName: {
 }
 
 const Nav: FC = () => {
-  const ref = React.useRef<HTMLDivElement>()
+  const ref = React.useRef<HTMLDivElement | any>()
 
   React.useEffect(() => {
     window.onscroll = function updateNav() {

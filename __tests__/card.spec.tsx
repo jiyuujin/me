@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Card from '../src/components/Card'
+import { Card } from '../src/components/Card'
 import { siteMetadata } from '../src/utils/constants'
 
 jest.mock('react-intl', () => {
