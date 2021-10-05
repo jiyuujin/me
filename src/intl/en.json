@@ -30,6 +30,10 @@
     "tech_hub": "A portal site created to incorporate the feelings of a sole proprietor while keeping in mind all activities such as side businesses, regardless of the main business. Our community (i-Company), including the portal site, aims to contribute widely to solving problems on the Web. At the moment, I have put together multiple media such as my blog and note in one feed.",
     "tech_blog": "Tech Blog",
     "tech_blog_description": "A personal blog opened in October 2018 to disseminate knowledge. The name comes from the fact that he loves cats, which is his characteristic, and that he is good at the front end as an individual Web developer, and that he is also very interested in infrastructure. <br /> At that time, Contentful, one of the Headless CMS, was running. There was an urgent need to have a product as an individual that is not affected by any external influences, such as the fact that we could not meet a permanent product even in the work scene and ended up in the middle of the process. Production has started based on Nuxt.js (v1.0.0-rc.11 at that time).",
+    "flutterkaigi_2021": "FlutterKaigi 2021 official site",
+    "flutterkaigi_2021_description": "When holding FlutterKaigi 2021, the first tech conference on the theme of Flutter in Japan, I was mainly in charge of producing the official site.",
+    "vscodeconjp_2021": "VSCode Conference Japan 2021 official site",
+    "vscodeconjp_2021_description": "This year, the 10th anniversary of VS Code, will be held under the concept of Happy Extension. Also, unlike the previous VSCode Conference, I was in charge of VSCode Conference Japan 2021 teaser site production in response to the increased momentum for producing the official site for the first time.",
     "insight": "A website established to calculate the performance of each website that it operates as a quantitative numerical value on a daily basis. The numbers here are based on PageSpeed \u200B\u200BInsights v5 and are regularly observed daily using Google Cloud Run."
   },
   "community": "Tech Community",
