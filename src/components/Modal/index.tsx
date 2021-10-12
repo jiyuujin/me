@@ -2,7 +2,7 @@ import React, { FC, useCallback, useEffect, useRef } from 'react'
 import * as SC from './index.module.scss'
 
 type ModalProps = {
-  children?: React.ReactChild | React.ReactChild[] | React.ReactChildren | React.ReactChildren[];
+  children?: React.ReactChild | React.ReactChild[] | React.ReactChildren | React.ReactChildren[]
   onClose: any
 }
 
