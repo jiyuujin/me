@@ -36,7 +36,9 @@ jobs:
         run: npm install
 
       - name: Transpile
-        run: yarn build
+        run: |
+          yarn build
+          yarn build:og-gen
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
