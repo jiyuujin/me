@@ -13,7 +13,7 @@ module.exports = {
     lonlat: `35.003238° N, 135.750389° E`,
     url: `https://yuma-kitamura.nekohack.me/`,
     iconImage: `/images/bakeneko2.png`,
-    ogImage: `https://yuma-kitamura.nekohack.me/yuma-kitamura.jpg`,
+    ogImage: `https://yuma-kitamura.nekohack.me/og/yuma-kitamura.jpg`,
     twitterUsername: `@jiyuujinlab`,
     twitterUrl: `https://twitter.com/jiyuujinlab`,
   },
