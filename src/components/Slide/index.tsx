@@ -20,34 +20,37 @@ const Slide: FC<SlideProps> = ({ data }) => {
         {data.map(({ node }: any) => {
           return (
             <li key={node.id}>
-              <div>{dateFormat(node.date)}</div>
-              <a
-                href={node.url}
-                role="button"
-                aria-pressed="true"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {intl.formatMessage({
-                  id: node.text,
-                })}
-              </a>
-              {node.youtubeUrl && (
-                <>
-                  {' / '}
-                  <a
-                    href={node.youtubeUrl}
-                    role="button"
-                    aria-pressed="true"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {intl.formatMessage({
-                      id: 'labels.youtube_live',
-                    })}
-                  </a>
-                </>
-              )}
+              <p>{dateFormat(node.date)}</p>
+              <p>
+                {`${node.host}, `}
+                <a
+                  href={node.url}
+                  role="button"
+                  aria-pressed="true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {intl.formatMessage({
+                    id: node.text,
+                  })}
+                </a>
+                {node.youtubeUrl && (
+                  <>
+                    {' / '}
+                    <a
+                      href={node.youtubeUrl}
+                      role="button"
+                      aria-pressed="true"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {intl.formatMessage({
+                        id: 'labels.youtube_live',
+                      })}
+                    </a>
+                  </>
+                )}
+              </p>
             </li>
           )
         })}
