@@ -65,6 +65,7 @@ export const query = graphql`
         node {
           id
           text
+          host
           url
           youtubeUrl
           date
