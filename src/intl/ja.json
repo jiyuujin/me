@@ -39,6 +39,7 @@
   "community_role": "下記コミュニティに一スタッフとして参画中",
   "slide": "登壇スライド",
   "slides": {
+    "github_issues_usage_as_a_cmd": "Github issues を CMS として扱う",
     "recommend_to_developers_relations_in_community_hands_on": "コミュニティハンズオンにおける DevRel のすゝめ",
     "personal_sponsor_in_jaws_days_2021": "JAWS DAYS 2021 個人スポンサー",
     "the_world_revolves_around_slack": "Slack を中心に世界は廻っている",
