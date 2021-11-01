@@ -22,7 +22,8 @@ const Slide: FC<SlideProps> = ({ data }) => {
             <li key={node.id}>
               <p>{dateFormat(node.date)}</p>
               <p>
-                {`${node.host}, `}
+                {node.host}
+                <br />
                 <a
                   href={node.url}
                   role="button"
