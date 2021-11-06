@@ -12,6 +12,8 @@ jobs:
     steps:
       - checkout
 
+      - run: sudo apt-get update && sudo apt-get install -y nasm autoconf automake libtool dpkg libpng-dev g++
+
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
