@@ -3,26 +3,26 @@
   flex-wrap: wrap;
   align-items: center;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
   padding: 8px 4%;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #fff;
-  opacity: 0.92;
+  opacity: 92%;
 
   .card-info {
     position: relative;
-    background-color: #fff;
     padding: 0 0.8rem;
+    background-color: #fff;
     border-radius: 0.5rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    opacity: 0.75;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    opacity: 75%;
 
     .name {
-      text-align: center;
-      font-size: 1.475rem;
-      font-weight: bold;
       padding-top: 1.6rem;
       margin: 0;
+      font-size: 1.475rem;
+      font-weight: bold;
+      text-align: center;
     }
 
     .tag {
@@ -39,33 +39,33 @@
     }
 
     .position {
-      list-style: none;
-      text-align: center;
-      font-size: 1.12rem;
-      font-weight: bold;
       padding: 1.2rem 0 0;
       margin: 0;
+      font-size: 1.12rem;
+      font-weight: bold;
+      text-align: center;
+      list-style: none;
     }
 
     .contact {
-      text-align: center;
       padding: 0.8rem 0;
       margin: 0;
+      text-align: center;
     }
   }
 }
 
 .footer-area {
   position: absolute;
-  bottom: 0;
   right: 0;
-  padding: 4px 0;
-  width: 100%;
-  border-top: 1px #ccc solid;
+  bottom: 0;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 4px 0;
   vertical-align: middle;
+  border-top: 1px #ccc solid;
 
   button {
     margin: 0 4px;
@@ -75,7 +75,7 @@
 @media (max-width: 600px) {
   .card-info {
     width: 96%;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
