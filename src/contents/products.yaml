@@ -26,6 +26,16 @@
     - Github Actions
   image: https://i.imgur.com/xuj6KVU.jpg
   url: https://webneko.dev/
+- title: products.minna_de_blog
+  description: products.minna_de_blog_description
+  skills:
+    - Vite
+    - Vue
+    - Github Issues
+    - Github Actions
+    - Vercel
+  image: https://i.imgur.com/cUXoOHs.jpg
+  url: https://ohayo.nekohack.me/
 - title: products.flutterkaigi_2021
   description: products.flutterkaigi_2021_description
   skills:
