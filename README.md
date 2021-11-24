@@ -6,18 +6,20 @@
   <h2>Web Developer | Yuma Kitamura</h2>
 </div>
 
-## `HTTPS` on localhost
-
-The local development has been converted to `https`, please refer to [オレオレ自己署名 SSL 証明書を作る](https://webneko.dev/posts/create-the-self-signed-ssl-certificate)
-
-```bash
-yarn dev --ssl-key ~/example.com+5-key.pem --ssl-cert ~/example.com+5.pem
-```
+## Install
 
 You can be launched without converting to `HTTPS`
 
 ```bash
 yarn dev
+```
+
+The local development has been converted to `https`, please refer to [オレオレ自己署名 SSL 証明書を作る](https://webneko.dev/posts/create-the-self-signed-ssl-certificate)
+
+```bash
+npm run dev --ssl-key ~/example.com+5-key.pem --ssl-cert ~/example.com+5.pem
+
+yarn dev --ssl-key ~/example.com+5-key.pem --ssl-cert ~/example.com+5.pem
 ```
 
 ## Skills
