@@ -11,6 +11,8 @@
 You can be launched without converting to `HTTPS`
 
 ```bash
+npm run dev
+
 yarn dev
 ```
 
