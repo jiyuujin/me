@@ -68,7 +68,7 @@
     "jest": "26.6.3",
     "prettier": "2.4.1",
     "puppeteer": "11.0.0",
-    "sass": "1.43.4",
+    "sass": "1.43.5",
     "stylelint": "14.1.0",
     "stylelint-a11y": "1.2.3",
     "stylelint-config-recess-order": "2.6.0",
