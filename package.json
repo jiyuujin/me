@@ -17,7 +17,7 @@
   "dependencies": {
     "@nekohack/footer-ui": "1.0.0",
     "@nekohack/normalize.css": "2.4.0",
-    "@stripe/react-stripe-js": "1.6.0",
+    "@stripe/react-stripe-js": "1.7.0",
     "@stripe/stripe-js": "1.22.0",
     "dayjs": "1.10.7",
     "gatsby": "2.32.13",
