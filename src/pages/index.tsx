@@ -48,6 +48,10 @@ export const query = graphql`
           skills
           image
           url
+          sub {
+            title
+            skills
+          }
         }
       }
     }

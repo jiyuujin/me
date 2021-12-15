@@ -1,3 +1,17 @@
+- title: products.design_system
+  description: products.design_system_description
+  url: https://normalize.nekohack.me/
+  sub:
+    - title: products.react_design_system
+      skills:
+        - React
+        - Styled Components
+        - Vercel
+    - title: products.vue_design_system
+      skills:
+        - Vue
+        - Scoped CSS
+        - Vercel
 - title: products.profile
   description: products.profile_description
   skills:
