@@ -10,7 +10,8 @@
     - AWS CloudFront
     - Circle CI
     - Github Actions
-  image: https://i.imgur.com/sN5nHoS.jpg
+  #image: https://i.imgur.com/sN5nHoS.jpg
+  image: https://yuma-kitamura.nekohack.me/og/yuma_kitamura-nekohack-me.jpg
   url: https://yuma-kitamura.nekohack.me/
 - title: products.tech_blog
   description: products.tech_blog_description
@@ -24,7 +25,8 @@
     - AWS CloudFront
     - Circle CI
     - Github Actions
-  image: https://i.imgur.com/xuj6KVU.jpg
+  #image: https://i.imgur.com/xuj6KVU.jpg
+  image: https://yuma-kitamura.nekohack.me/og/webneko-blog.jpg
   url: https://webneko.dev/
 - title: products.minna_de_blog
   description: products.minna_de_blog_description
@@ -34,7 +36,8 @@
     - Github Issues
     - Github Actions
     - Vercel
-  image: https://i.imgur.com/cUXoOHs.jpg
+  #image: https://i.imgur.com/cUXoOHs.jpg
+  image: https://yuma-kitamura.nekohack.me/og/ohayo-engineer.jpg
   url: https://ohayo.nekohack.me/
 - title: products.flutterkaigi_2021
   description: products.flutterkaigi_2021_description
@@ -50,5 +53,6 @@
     - Next.js (React)
     - CSS modules
     - Github Pages
-  image: https://i.imgur.com/fOyWXX2.jpg
+  #image: https://i.imgur.com/fOyWXX2.jpg
+  image: https://yuma-kitamura.nekohack.me/og/vscodejpcon-2021.jpg
   url: https://vscode.github.io/conf2021/
