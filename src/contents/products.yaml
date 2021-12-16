@@ -1,5 +1,6 @@
 - title: products.design_system
-  description: products.design_system_description
+  description:
+    - products.design_system_description
   url: https://normalize.nekohack.me/
   sub:
     - title: products.react_design_system
@@ -13,7 +14,9 @@
         - Scoped CSS
         - Vercel
 - title: products.profile
-  description: products.profile_description
+  description:
+    - products.profile_description_1
+    - products.profile_description_2
   skills:
     - normalize.css
     - nekohack-ui
@@ -28,7 +31,10 @@
   image: https://yuma-kitamura.nekohack.me/og/yuma_kitamura-nekohack-me.jpg
   url: https://yuma-kitamura.nekohack.me/
 - title: products.tech_blog
-  description: products.tech_blog_description
+  description:
+    - products.tech_blog_description_1
+    - products.tech_blog_description_2
+    - products.tech_blog_description_3
   skills:
     - j-stylebook
     - Nuxt.js
@@ -43,7 +49,8 @@
   image: https://yuma-kitamura.nekohack.me/og/webneko-blog.jpg
   url: https://webneko.dev/
 - title: products.minna_de_blog
-  description: products.minna_de_blog_description
+  description:
+    - products.minna_de_blog_description
   skills:
     - Vite
     - Vue
@@ -54,7 +61,8 @@
   image: https://yuma-kitamura.nekohack.me/og/ohayo-engineer.jpg
   url: https://ohayo.nekohack.me/
 - title: products.flutterkaigi_2021
-  description: products.flutterkaigi_2021_description
+  description:
+    - products.flutterkaigi_2021_description
   skills:
     - Flutter
     - Flutter for Web (PWA)
@@ -62,7 +70,8 @@
   image: https://i.imgur.com/9xFIDzQ.jpg
   url: https://flutterkaigi.jp/
 - title: products.vscodeconjp_2021
-  description: products.vscodeconjp_2021_description
+  description:
+    - products.vscodeconjp_2021_description
   skills:
     - Next.js (React)
     - CSS modules

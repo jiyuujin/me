@@ -6,7 +6,7 @@ type ProductProps = {
     node: {
       id: string
       title: string
-      description: string
+      description: string[]
       skills?: string[]
       image?: string
       url?: string
@@ -30,7 +30,14 @@ const Product: FC<ProductProps> = ({ data }) => {
           <div key={node.id}>
             <h2>{intl.formatMessage({ id: node.title })}</h2>
             {node.image && <img src={node.image} alt={node.title} decoding="async" />}
-            <p>{intl.formatMessage({ id: node.description })}</p>
+            {node.description.map((d: string, index: number) => {
+              return (
+                <p
+                  key={index}
+                  dangerouslySetInnerHTML={{ __html: intl.formatMessage({ id: d }) }}
+                />
+              )
+            })}
             {node.skills && (
               <>
                 <h3>{intl.formatMessage({ id: 'product_technology_used' })}</h3>
