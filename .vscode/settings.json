@@ -3,6 +3,10 @@
     "source.fixAll.eslint": true
   },
   "eslint.lintTask.enable": true,
+  "files.exclude": {
+    "node_modules": true,
+    "gatsby-config.js": true
+  },
   "peacock.color": "#215732",
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#2f7c47",

@@ -63,6 +63,10 @@ typings/
 public
 yarn-error.log
 
+gatsby-browser.js
+gatsby-config.js
+gatsby-node.js
+
 README.html
 
 # idea
