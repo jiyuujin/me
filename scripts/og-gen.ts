@@ -9,6 +9,10 @@ const OG_SOURCE_DIR_PATH = path.join(__dirname, '..', 'data')
 const OG_SOURCE_HTML_FILE_PATH = path.join(OG_SOURCE_DIR_PATH, 'og.html')
 const OG_DIR_PATH = path.join(__dirname, '..', 'public', 'og')
 
+async function sleep(delay: number) {
+  return new Promise((resolve: any) => setTimeout(resolve, delay))
+}
+
 async function captureOgImage(
   browser: any,
   url: string = '',
@@ -29,6 +33,7 @@ async function captureOgImage(
     await page.exposeFunction('getDescription', () => description)
   }
   await page.reload()
+  await sleep(5000)
   await page.screenshot({
     path: imagePath,
     type: 'jpeg',
