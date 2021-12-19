@@ -70,7 +70,9 @@ async function captureOgImage(
     },
   ]
 
-  const browser = await puppeteer.launch()
+  const browser = await puppeteer.launch({
+    args: ['--lang=ja'],
+  })
 
   for (const { slug, url, title, description } of ogList) {
     const OG_IMAGE_FILE_PATH = `${OG_DIR_PATH}/` + slug + '.jpg'
