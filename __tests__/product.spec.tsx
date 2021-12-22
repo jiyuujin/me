@@ -9,7 +9,7 @@ const imageData = [
     node: {
       id: 'abc',
       title: 'title',
-      description: 'title',
+      description: ['title'],
       skills: ['title'],
       image: 'title',
       url: 'title',
