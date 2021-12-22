@@ -19,6 +19,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sass`,
@@ -26,7 +27,6 @@ module.exports = {
         implementation: require(`sass`),
       },
     },
-    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-react-intl`,
       options: {
