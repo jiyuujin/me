@@ -8,20 +8,12 @@
 
 ## Install
 
-You can be launched without converting to `HTTPS`
+You can be launched at [https://localhost:8000](https://localhost:8000)
 
 ```bash
 npm run dev
 
 yarn dev
-```
-
-The local development has been converted to `https`, please refer to [オレオレ自己署名 SSL 証明書を作る](https://webneko.dev/posts/create-the-self-signed-ssl-certificate)
-
-```bash
-npm run dev --ssl-key ~/example.com+5-key.pem --ssl-cert ~/example.com+5.pem
-
-yarn dev --ssl-key ~/example.com+5-key.pem --ssl-cert ~/example.com+5.pem
 ```
 
 ## Skills

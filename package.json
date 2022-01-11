@@ -2,7 +2,7 @@
   "name": "kitten",
   "description": "",
   "scripts": {
-    "dev": "gatsby develop",
+    "dev": "gatsby develop --https --cert-file ./certificates/localhost.pem --key-file ./certificates/localhost-key.pem",
     "build": "gatsby build",
     "build:og-gen": "ts-node --project tsconfig.builder.json scripts/og-gen.ts",
     "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
