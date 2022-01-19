@@ -47,7 +47,7 @@
     "ts-node": "10.4.0"
   },
   "devDependencies": {
-    "@babel/core": "7.16.7",
+    "@babel/core": "7.16.10",
     "@babel/helper-create-regexp-features-plugin": "7.16.7",
     "@babel/preset-typescript": "7.16.7",
     "@nekohack/eslint-config-react": "0.5.0",
