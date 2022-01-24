@@ -52,7 +52,7 @@
     "@babel/helper-create-regexp-features-plugin": "7.16.7",
     "@babel/preset-typescript": "7.16.7",
     "@nekohack/eslint-config-react": "0.8.0",
-    "@swc/core": "1.2.131",
+    "@swc/core": "1.2.133",
     "@types/jest": "27.4.0",
     "@types/react": "17.0.38",
     "@types/react-dom": "17.0.11",
