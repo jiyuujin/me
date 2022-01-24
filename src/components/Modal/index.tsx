@@ -9,11 +9,14 @@ type ModalProps = {
 const Modal: FC<ModalProps> = ({ children, onClose }: ModalProps) => {
   const ref = useRef(null)
 
-  const escapeListener = useCallback((e: KeyboardEvent) => {
-    if (e.key === 'Escape') {
-      onClose()
-    }
-  }, [])
+  const escapeListener = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose()
+      }
+    },
+    [onClose],
+  )
 
   const clickListener = useCallback(
     (e: MouseEvent) => {
@@ -21,7 +24,7 @@ const Modal: FC<ModalProps> = ({ children, onClose }: ModalProps) => {
         onClose?.()
       }
     },
-    [ref.current],
+    [onClose],
   )
 
   useEffect(() => {
@@ -31,7 +34,7 @@ const Modal: FC<ModalProps> = ({ children, onClose }: ModalProps) => {
       document.removeEventListener('click', clickListener)
       document.removeEventListener('keyup', escapeListener)
     }
-  }, [])
+  }, [clickListener, escapeListener])
 
   return (
     <div className={SC.modalMask}>

@@ -103,7 +103,7 @@ export const CheckoutForm = ({ isTest, siteMetadata }: CheckoutFormType) => {
               <div className={SC.checkoutForm_info}>
                 <Card data={siteMetadata} />
               </div>
-              <label
+              <div
                 style={{
                   width: '100%',
                   padding: '12px 0',
@@ -114,7 +114,7 @@ export const CheckoutForm = ({ isTest, siteMetadata }: CheckoutFormType) => {
                     hidePostalCode: true,
                   }}
                 />
-              </label>
+              </div>
               <button className={SC.checkoutForm_button} disabled={!stripe}>
                 {intl.formatMessage({
                   id: 'labels.payment',

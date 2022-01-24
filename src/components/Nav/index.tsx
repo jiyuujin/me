@@ -48,15 +48,13 @@ const Nav: FC = () => {
                 language: string
               }) =>
                 languages.map((language) => (
-                  <a
+                  <button
                     key={language}
-                    role="button"
-                    aria-pressed="true"
                     onClick={() => changeLocale(language)}
                     className={SC.navLink}
                   >
                     {languageName[language]}
-                  </a>
+                  </button>
                 ))
               }
             </IntlContextConsumer>
