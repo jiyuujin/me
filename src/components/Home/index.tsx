@@ -4,6 +4,7 @@ import { Payment } from '../Payment'
 import Introduction from '../Introduction'
 import Work from '../Work'
 import Product from '../Product'
+import Timeline from '../Timeline'
 import Community from '../Community'
 import Slide from '../Slide'
 
@@ -15,6 +16,7 @@ const Home: FC<any> = ({ data }) => {
       <Introduction data={data.site?.siteMetadata} />
       <Work data={data.allLinksYaml?.edges} />
       <Product data={data.allProductsYaml?.edges} />
+      <Timeline />
       <Community data={data.allCommunitiesYaml?.edges} />
       <Slide data={data.allTalksYaml?.edges} />
     </main>
