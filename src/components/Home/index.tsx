@@ -7,6 +7,7 @@ import Product from '../Product'
 import Timeline from '../Timeline'
 import Community from '../Community'
 import Slide from '../Slide'
+import Portrait from '../Portrait'
 
 const Home: FC<any> = ({ data }) => {
   return (
@@ -19,6 +20,7 @@ const Home: FC<any> = ({ data }) => {
       <Timeline />
       <Community data={data.allCommunitiesYaml?.edges} />
       <Slide data={data.allTalksYaml?.edges} />
+      <Portrait />
     </main>
   )
 }
