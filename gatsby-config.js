@@ -52,6 +52,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
