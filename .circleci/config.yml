@@ -8,6 +8,7 @@ parameters:
 orbs:
   welcome: circleci/welcome-orb@0.4.1
   aws-cli: circleci/aws-cli@2.0.6
+  aws-s3: circleci/aws-s3@3.0
 
 executors:
   aws-cli:
@@ -48,7 +49,9 @@ commands:
   package_and_deploy:
     description: Deploy
     steps:
-      - run: aws s3 sync ./public/ s3://yuma-kitamura.nekohack.me/ --delete --acl public-read
+      - aws-s3/sync:
+          from: public
+          to: s3://yuma-kitamura.nekohack.me
 
 jobs:
   install_and_setup_cli:
