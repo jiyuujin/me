@@ -73,7 +73,7 @@ jobs:
 
 workflows:
   version: 2
-  master-build:
+  push:
     jobs:
       - master_build:
           filters:
