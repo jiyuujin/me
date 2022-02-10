@@ -72,7 +72,7 @@
     "jest": "27.5.1",
     "markuplint": "1.11.4",
     "prettier": "2.5.1",
-    "puppeteer": "13.3.0",
+    "puppeteer": "13.3.1",
     "sass": "1.49.7",
     "stylelint": "14.4.0",
     "stylelint-a11y": "1.2.3",
