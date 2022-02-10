@@ -10,6 +10,7 @@
     "eslint:fix": "eslint ./ --ext ts,tsx --fix",
     "stylelint": "stylelint --config .stylelintrc.yml 'src/**/*.scss'",
     "stylelint:fix": "stylelint --config .stylelintrc.yml 'src/**/*.scss' --fix",
+    "htmllint": "markuplint **/*.html **/*.tsx src/**/*.tsx src/**/**/*.tsx",
     "test": "jest --testEnvironment jsdom",
     "test-cover": "jest --coverage",
     "test:w": "npm run test-cover -- --watch"
@@ -52,6 +53,7 @@
     "@babel/core": "7.17.2",
     "@babel/helper-create-regexp-features-plugin": "7.17.0",
     "@babel/preset-typescript": "7.16.7",
+    "@markuplint/jsx-parser": "0.3.2-beta.1",
     "@nekohack/eslint-config-react": "0.8.0",
     "@swc/core": "1.2.138",
     "@types/jest": "27.4.0",
@@ -68,6 +70,7 @@
     "eslint": "8.8.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "27.5.1",
+    "markuplint": "1.11.4",
     "prettier": "2.5.1",
     "puppeteer": "13.3.0",
     "sass": "1.49.7",
