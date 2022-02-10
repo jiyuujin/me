@@ -22,7 +22,7 @@ async function captureOgImage(
 ) {
   const page = await browser.newPage()
   await page.setExtraHTTPHeaders({
-    'Accept-Language': 'ja-JP'
+    'Accept-Language': 'ja-JP',
   })
   await page.setViewport({
     width: 1200,
