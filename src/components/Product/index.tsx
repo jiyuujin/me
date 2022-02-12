@@ -29,7 +29,9 @@ const Product: FC<ProductProps> = ({ data }) => {
         return (
           <div key={node.id}>
             <h2>{intl.formatMessage({ id: node.title })}</h2>
-            {node.image && <img src={node.image} alt={node.title} decoding="async" />}
+            {node.image && (
+              <img src={node.image} alt={node.title} width={600} height={400} decoding="async" />
+            )}
             {node.description.map((d: string, index: number) => {
               return (
                 <p

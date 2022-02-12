@@ -204,8 +204,24 @@ const Timeline = () => {
                   ) : null}
                 </header>
                 <div className={SC.timelineItemDetail}>
-                  {item.imageName && <img alt={item.title} src={`/og/${item.imageName}.jpg`} />}
-                  {item.imageUrl && <img alt={item.title} src={item.imageUrl} />}
+                  {item.imageName && (
+                    <img
+                      alt={item.title}
+                      src={`/og/${item.imageName}.jpg`}
+                      width={150}
+                      height={100}
+                      decoding="async"
+                    />
+                  )}
+                  {item.imageUrl && (
+                    <img
+                      alt={item.title}
+                      src={item.imageUrl}
+                      width={150}
+                      height={100}
+                      decoding="async"
+                    />
+                  )}
                   {item.description && <span>{item.description}</span>}
                 </div>
               </a>
