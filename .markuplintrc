@@ -10,7 +10,7 @@
     "doctype": true,
     "id-duplication": true,
     "permitted-contents": true,
-    "required-attr": true,
+    "required-attr": false,
     "invalid-attr": {
       "option": {
         "ignoreAttrNamePrefix": [
