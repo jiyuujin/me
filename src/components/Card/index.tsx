@@ -3,7 +3,7 @@ import { useIntl } from 'gatsby-plugin-react-intl'
 import * as SC from './index.module.scss'
 import { SiteMetadataTypes } from '../../types'
 import { NekoButton } from 'nekohack-ui'
-import PaperPlaneSvg from '../../static/icons/paper-plane.svg'
+import PlaneLogoSvg from '../../static/icons/plane_logo.svg'
 
 export const Card: FC<any> = ({ data }: SiteMetadataTypes) => {
   const intl = useIntl()
@@ -27,7 +27,7 @@ export const Card: FC<any> = ({ data }: SiteMetadataTypes) => {
             }}
           >
             {intl.formatMessage({ id: 'contact' })}
-            <PaperPlaneSvg
+            <PlaneLogoSvg
               style={{
                 width: '20px',
                 height: '20px',
