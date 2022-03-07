@@ -6,7 +6,7 @@ import * as SC from './index.module.scss'
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
 import { loadStripe } from '@stripe/stripe-js'
 
-import ContributeSvg from '../../static/icons/contribute.svg'
+import ContributeSvg from '../../static/icons/contribute_logo.svg'
 
 import Modal from '../Modal'
 import { Card } from '../Card'
