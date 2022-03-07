@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { useIntl } from 'gatsby-plugin-react-intl'
 import dayjs from 'dayjs'
+import YouTubeLogoSvg from '../../static/icons/youtube_logo.svg'
 
 type SlideProps = {
   data: Array<unknown>
@@ -21,9 +22,8 @@ const Slide: FC<SlideProps> = ({ data }) => {
           return (
             <li key={node.id}>
               <p>{dateFormat(node.date)}</p>
-              <p>
+              <p style={{ display: 'flex', flexDirection: 'column', verticalAlign: 'middle' }}>
                 {node.host}
-                <br />
                 <a
                   href={node.url}
                   role="button"
@@ -37,14 +37,21 @@ const Slide: FC<SlideProps> = ({ data }) => {
                 </a>
                 {node.youtubeUrl && (
                   <>
-                    {' / '}
                     <a
                       href={node.youtubeUrl}
                       role="button"
                       aria-pressed="true"
+                      style={{ display: 'flex', justifyContent: 'flex-start' }}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
+                      <YouTubeLogoSvg
+                        style={{
+                          width: '20px',
+                          height: '20px',
+                          marginRight: '4px',
+                        }}
+                      />
                       {intl.formatMessage({
                         id: 'labels.youtube_live',
                       })}
