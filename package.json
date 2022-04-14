@@ -19,7 +19,7 @@
     "@nekohack/footer-ui": "1.0.0",
     "@nekohack/normalize.css": "2.6.0",
     "@stripe/react-stripe-js": "1.7.1",
-    "@stripe/stripe-js": "1.26.0",
+    "@stripe/stripe-js": "1.27.0",
     "dayjs": "1.11.0",
     "gatsby": "3.14.6",
     "gatsby-plugin-google-adsense": "1.1.3",
