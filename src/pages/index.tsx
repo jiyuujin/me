@@ -2,19 +2,18 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
+import Home from '../components/Home'
 import { Index as NoticeBar } from '../components/Notice'
 import { Index as NavBar } from '../components/Nav'
-import Home from '../components/Home'
-import Footer from '../components/Footer'
-// import { Helmet } from 'react-helmet'
+import { Index as Footer } from '../components/Footer'
 
 const IndexPage = ({ data }: any) => {
   return (
     <Layout>
       <SEO />
       <NoticeBar />
-      <NavBar />
       <main>
+        <NavBar />
         <Home data={data} />
         <Footer />
       </main>
