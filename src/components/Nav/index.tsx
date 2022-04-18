@@ -9,7 +9,7 @@ const languageName: {
   ja: '日本語',
 }
 
-const Nav: FC = () => {
+export const Index: FC = () => {
   const ref = React.useRef<HTMLDivElement | any>()
 
   React.useEffect(() => {
@@ -64,5 +64,3 @@ const Nav: FC = () => {
     </div>
   )
 }
-
-export default Nav
