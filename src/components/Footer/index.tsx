@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import { useIntl } from 'gatsby-plugin-react-intl'
 import * as SC from './index.module.scss'
 
-const Footer: FC = () => {
+export const Index: FC = () => {
   const intl = useIntl()
 
   return (
@@ -20,5 +20,3 @@ const Footer: FC = () => {
     </footer>
   )
 }
-
-export default Footer
