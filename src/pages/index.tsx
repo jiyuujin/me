@@ -6,7 +6,6 @@ import { Index as NoticeBar } from '../components/Notice'
 import { Index as NavBar } from '../components/Nav'
 import Home from '../components/Home'
 import Footer from '../components/Footer'
-import { CookieFooterWrapper } from '../components/Footer/cookie'
 // import { Helmet } from 'react-helmet'
 
 const IndexPage = ({ data }: any) => {
@@ -18,7 +17,6 @@ const IndexPage = ({ data }: any) => {
       <main>
         <Home data={data} />
         <Footer />
-        <CookieFooterWrapper />
       </main>
     </Layout>
   )
