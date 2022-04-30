@@ -72,7 +72,7 @@ jobs:
       - aws-cli/install
       - aws-cli/setup
       - prepare_node_dependency
-      - package_and_deploy
+      # - package_and_deploy
 
 workflows:
   version: 2
