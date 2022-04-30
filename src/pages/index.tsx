@@ -46,12 +46,20 @@ export const query = graphql`
           id
           title
           description
-          skills
+          skills {
+            name
+            category
+            status
+          }
           image
           url
           sub {
             title
-            skills
+            skills {
+              name
+              category
+              status
+            }
           }
         }
       }

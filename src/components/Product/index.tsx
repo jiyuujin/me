@@ -7,7 +7,11 @@ type ProductProps = {
       id: string
       title: string
       description: string[]
-      skills?: string[]
+      skills?: Array<{
+        name: string
+        category: string
+        status: 'active' | 'used'
+      }>
       image?: string
       url?: string
       sub?: Array<{
@@ -44,9 +48,12 @@ const Product: FC<ProductProps> = ({ data }) => {
               <>
                 <h3>{intl.formatMessage({ id: 'product_technology_used' })}</h3>
                 <ul>
-                  {node.skills?.map((s: string) => {
-                    return <li key={s}>{s}</li>
-                  })}
+                  {node.skills?.map(
+                    (s: { name: string; category: string; status: 'active' | 'used' }) => {
+                      if (s.status !== 'active') return
+                      return <li key={s.name}>{`${s.name} (${s.category})`}</li>
+                    },
+                  )}
                 </ul>
               </>
             )}
@@ -65,14 +72,35 @@ const Product: FC<ProductProps> = ({ data }) => {
                 <h3>{intl.formatMessage({ id: 'sub_product' })}</h3>
                 <ul>
                   {node.sub?.map(
-                    (s: { title: string; skills: string[]; url: string }, index: number) => (
+                    (
+                      s: {
+                        title: string
+                        skills: Array<{
+                          name: string
+                          category: string
+                          status: 'active' | 'used'
+                        }>
+                        url: string
+                      },
+                      index: number,
+                    ) => (
                       <li key={index}>
                         <h4>{intl.formatMessage({ id: s.title })}</h4>
                         <h5>{intl.formatMessage({ id: 'product_technology_used' })}</h5>
                         <ul>
-                          {s.skills?.map((s: string) => {
-                            return <li key={s}>{s}</li>
-                          })}
+                          {s.skills?.map(
+                            (
+                              s: {
+                                name: string
+                                category: string
+                                status: 'active' | 'used'
+                              },
+                              key: number,
+                            ) => {
+                              if (s.status !== 'active') return
+                              return <li key={key}>{`${s.name} (${s.category})`}</li>
+                            },
+                          )}
                         </ul>
                         <h5>{intl.formatMessage({ id: 'product_url' })}</h5>
                         <p>
