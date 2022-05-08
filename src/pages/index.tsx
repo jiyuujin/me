@@ -53,6 +53,7 @@ export const query = graphql`
           }
           image
           url
+          enabled
           sub {
             title
             skills {
@@ -70,6 +71,7 @@ export const query = graphql`
           id
           text
           url
+          enabled
         }
       }
     }
@@ -82,6 +84,7 @@ export const query = graphql`
           url
           youtubeUrl
           date
+          enabled
         }
       }
     }
@@ -91,6 +94,7 @@ export const query = graphql`
           id
           text
           url
+          enabled
         }
       }
     }
