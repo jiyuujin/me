@@ -1,6 +1,6 @@
 {
   "basic_title": "Web Developer",
-  "basic_biography": "On the net, they live under the name of JIYUUJIN. Birthday is November 04, 1988. Born in Toyonaka City, Osaka Prefecture. Gender is male. Currently, we are active mainly in the Kansai area (Kyoto and Osaka).",
+  "basic_biography": "On the net, they live under the name of JIYUUJIN. Birthday is November 4th, 1988. Born in Toyonaka City, Osaka Prefecture. Gender is male. We are currently active in the Kansai area (Kyoto and Osaka).",
   "label": "Label",
   "labels": {
     "basic_info": "Basic Information",
@@ -16,7 +16,7 @@
   "confirm_policy": "Confirm Policy",
   "enter_payment_method": "Enter Payment Method",
   "work": "Work",
-  "work_experience": "I started my career as an iOS native app engineer. While acquiring basic coding through work as an application engineer, I also worked on improving the UX of the management screen (PHP) that runs behind it. I was fascinated by the part that went through the process of improving the Web, and gradually stepped into the area of \u200B\u200Bfront-end engineers, such as Node.js and other front-ends, CSS design, and the use of frameworks.",
+  "work_experience": "I started my career as an iOS native app engineer. Learning through work as an application engineer, I improved on my basic coding skills. I was tasked with the improvement of the UX management screen (coded in PHP) that runs behind it. I was fascinated by the what I did, improving the Web. So, gradually stepped into the area of NodeJS and \u200B\u200Bfront end development with CSS design and front end frameworks.",
   "about_me": "About Me",
   "skill": "Skill",
   "skill_set": "Skill Set",
