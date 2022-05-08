@@ -18,50 +18,52 @@ const Slide: FC<SlideProps> = ({ data }) => {
     <div className="section">
       <h1>{intl.formatMessage({ id: 'slide' })}</h1>
       <ul>
-        {data.map(({ node }: any) => {
-          return (
-            <li key={node.id}>
-              <p>{dateFormat(node.date)}</p>
-              <p style={{ display: 'flex', flexDirection: 'column', verticalAlign: 'middle' }}>
-                {node.host}
-                <a
-                  href={node.url}
-                  role="button"
-                  aria-pressed="true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {intl.formatMessage({
-                    id: node.text,
-                  })}
-                </a>
-                {node.youtubeUrl && (
-                  <>
-                    <a
-                      href={node.youtubeUrl}
-                      role="button"
-                      aria-pressed="true"
-                      style={{ display: 'flex', justifyContent: 'flex-start' }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <YouTubeLogoSvg
-                        style={{
-                          width: '20px',
-                          height: '20px',
-                          marginRight: '4px',
-                        }}
-                      />
-                      {intl.formatMessage({
-                        id: 'labels.youtube_live',
-                      })}
-                    </a>
-                  </>
-                )}
-              </p>
-            </li>
-          )
-        })}
+        {data
+          .filter(({ node }: any) => node.enabled === true)
+          .map(({ node }: any) => {
+            return (
+              <li key={node.id}>
+                <p>{dateFormat(node.date)}</p>
+                <p style={{ display: 'flex', flexDirection: 'column', verticalAlign: 'middle' }}>
+                  {node.host}
+                  <a
+                    href={node.url}
+                    role="button"
+                    aria-pressed="true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {intl.formatMessage({
+                      id: node.text,
+                    })}
+                  </a>
+                  {node.youtubeUrl && (
+                    <>
+                      <a
+                        href={node.youtubeUrl}
+                        role="button"
+                        aria-pressed="true"
+                        style={{ display: 'flex', justifyContent: 'flex-start' }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <YouTubeLogoSvg
+                          style={{
+                            width: '20px',
+                            height: '20px',
+                            marginRight: '4px',
+                          }}
+                        />
+                        {intl.formatMessage({
+                          id: 'labels.youtube_live',
+                        })}
+                      </a>
+                    </>
+                  )}
+                </p>
+              </li>
+            )
+          })}
       </ul>
     </div>
   )

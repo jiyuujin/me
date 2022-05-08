@@ -14,23 +14,25 @@ const Work: FC<WorkProps> = ({ data }) => {
       <p>{intl.formatMessage({ id: 'work_experience' })}</p>
       <h2>{intl.formatMessage({ id: 'labels.related_links' })}</h2>
       <ul>
-        {data.map(({ node }: any) => {
-          return (
-            <li key={node.id}>
-              <a
-                href={node.url}
-                role="button"
-                aria-pressed="true"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {intl.formatMessage({
-                  id: node.text,
-                })}
-              </a>
-            </li>
-          )
-        })}
+        {data
+          .filter(({ node }: any) => node.enabled === true)
+          .map(({ node }: any) => {
+            return (
+              <li key={node.id}>
+                <a
+                  href={node.url}
+                  role="button"
+                  aria-pressed="true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {intl.formatMessage({
+                    id: node.text,
+                  })}
+                </a>
+              </li>
+            )
+          })}
       </ul>
     </div>
   )
