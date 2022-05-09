@@ -8,12 +8,13 @@ import Timeline from '../Timeline'
 import Community from '../Community'
 import Slide from '../Slide'
 import Portrait from '../Portrait'
+import { PAYMENT } from '../../utils/feature'
 
 const Home: FC<any> = ({ data }) => {
   return (
     <main>
       <Header data={data.site?.siteMetadata} />
-      <Payment siteMetadata={data.site?.siteMetadata} />
+      {PAYMENT && <Payment siteMetadata={data.site?.siteMetadata} />}
       <Introduction data={data.site?.siteMetadata} />
       <Work data={data.allLinksYaml?.edges} />
       <Product data={data.allProductsYaml?.edges} />
