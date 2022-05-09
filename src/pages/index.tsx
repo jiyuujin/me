@@ -51,6 +51,11 @@ export const query = graphql`
             category
             status
           }
+          repos {
+            name
+            url
+            status
+          }
           image
           url
           enabled

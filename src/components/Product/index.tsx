@@ -50,12 +50,35 @@ const Product: FC<ProductProps> = ({ data }) => {
                 <>
                   <h3>{intl.formatMessage({ id: 'product_technology_used' })}</h3>
                   <ul>
-                    {node.skills?.map(
-                      (s: { name: string; category: string; status: 'active' | 'used' }) => {
-                        if (s.status !== 'active') return
+                    {node.skills
+                      ?.filter(
+                        (s: { name: string; url: string; status: 'active' | 'used' }) =>
+                          s.status === 'active',
+                      )
+                      .map((s: { name: string; category: string; status: 'active' | 'used' }) => {
                         return <li key={s.name}>{`${s.name} (${s.category})`}</li>
-                      },
-                    )}
+                      })}
+                  </ul>
+                </>
+              )}
+              {node.repos && (
+                <>
+                  <h3>{intl.formatMessage({ id: 'repository_managed' })}</h3>
+                  <ul>
+                    {node.repos
+                      ?.filter(
+                        (s: { name: string; url: string; status: 'active' | 'used' }) =>
+                          s.status === 'active',
+                      )
+                      .map((s: { name: string; url: string; status: 'active' | 'used' }) => {
+                        return (
+                          <li key={s.name}>
+                            <a href={s.url} target="_blank" rel="noopener noreferrer">
+                              {s.name}
+                            </a>
+                          </li>
+                        )
+                      })}
                   </ul>
                 </>
               )}
