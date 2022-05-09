@@ -53,6 +53,10 @@
     - name: Github Actions
       category: CI
       status: active
+  repos:
+    - name: jiyuujin/kitten
+      url: https://github.com/jiyuujin/kitten
+      status: active
   #image: https://i.imgur.com/sN5nHoS.jpg
   image: https://yuma-kitamura.nekohack.me/og/yuma_kitamura-nekohack-me.jpg
   url: https://yuma-kitamura.nekohack.me/
@@ -89,6 +93,13 @@
       status: used
     - name: Github Actions
       category: CI
+      status: active
+  repos:
+    - name: jiyuujin/webneko-blog
+      url: https://github.com/jiyuujin/webneko-blog
+      status: used
+    - name: jiyuujin/webneko-blog-next
+      url: https://github.com/jiyuujin/webneko-blog-next
       status: active
   #image: https://i.imgur.com/xuj6KVU.jpg
   image: https://yuma-kitamura.nekohack.me/og/webneko-blog.jpg
@@ -127,6 +138,10 @@
     - name: Firebase hosting
       category: Static Website Hosting
       status: active
+  repos:
+    - name: FlutterKaigi/confwebsite2021
+      url: https://github.com/FlutterKaigi/confwebsite2021
+      status: active
   #image: https://i.imgur.com/9xFIDzQ.jpg
   image: https://yuma-kitamura.nekohack.me/og/flutterkaigi-2021.jpg
   url: https://flutterkaigi.jp/
@@ -143,6 +158,10 @@
       status: active
     - name: Github Pages
       category: CI
+      status: active
+  repos:
+    - name: vscodejp/conf2021
+      url: https://github.com/vscodejp/conf2021
       status: active
   #image: https://i.imgur.com/fOyWXX2.jpg
   image: https://yuma-kitamura.nekohack.me/og/vscodejpcon-2021.jpg
