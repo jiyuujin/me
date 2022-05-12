@@ -57,7 +57,7 @@
     "@nekohack/eslint-config-react": "0.10.0",
     "@nekohack/stylelint-config": "0.3.0",
     "@swc/core": "1.2.182",
-    "@types/jest": "27.5.0",
+    "@types/jest": "27.5.1",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.3",
     "@types/react-helmet": "6.1.5",
