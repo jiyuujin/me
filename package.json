@@ -68,7 +68,7 @@
     "babel-jest": "27.5.1",
     "babel-preset-gatsby": "2.14.0",
     "dotenv": "8.6.0",
-    "eslint": "8.15.0",
+    "eslint": "8.16.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "27.5.1",
     "markuplint": "2.7.1",
