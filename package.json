@@ -50,7 +50,7 @@
     "ts-node": "10.8.1"
   },
   "devDependencies": {
-    "@babel/core": "7.18.2",
+    "@babel/core": "7.18.5",
     "@babel/helper-create-regexp-features-plugin": "7.17.12",
     "@babel/preset-typescript": "7.17.12",
     "@markuplint/jsx-parser": "2.4.1",
