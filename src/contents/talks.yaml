@@ -1,3 +1,9 @@
+- text: slides.about_22s_googleio_wwdc_recap
+  host: PWA Night
+  url: https://webneko.dev/posts/22s-googleio-wwdc-recap
+  youtubeUrl:
+  date: 2022/06/15
+  enabled: true
 - text: slides.react_workshop_in_line_developer_community_2022
   host: LINE Developer Community
   url: https://webneko.dev/posts/the-answer-to-learn-react-with-line
